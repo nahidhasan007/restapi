@@ -1,0 +1,18 @@
+{% extends 'blood_group/index.html' %}
+
+{% block content %}
+
+<div>
+  <ul>
+  	{% for items in data %}
+  	        <li>Name:{{items.donar_name}}</li>
+ 			<li>Blood Group:{{items.donar_blood_group}}</li>
+ 			<li>Mobile:{{items.mobile_number}}</li>
+ 			<li>Location:{{items.location}}</li>
+ 			<br><br>
+ 	{% endfor %}		
+  </ul>
+</div>
+
+
+{% endblock %}

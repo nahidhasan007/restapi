@@ -1,0 +1,13 @@
+{% extends 'blood_group/index.html' %}
+
+{% block content %}
+<h3>Add your Location....</h3><br>
+<form action="{% url 'blood_group:add_location' %}" method="POST">
+	{% csrf_token %}
+	<input type="text" name="location_name" placeholder="location"><br>
+	<input type="submit" value="Add Location">
+</form>
+
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'blood_group/index.html' %}
+
+{% block content %}
+<h2>{{loc.location_name}}</h2>
+ <div>
+ 	<ol>
+ 		{% for info in data %}
+ 		<ol type="1">
+ 		   <ul>
+ 			<li>Name:{{info.donar_name}}</li>
+ 			<li>Blood Group:{{info.donar_blood_group}}</li>
+ 			<li>Mobile:{{info.mobile_number}}</li>
+ 			<br><br>
+ 			</ul>
+ 		</ol>	
+ 		{% endfor %}
+ 	</ol>
+ </div>
+
+{% endblock %}
